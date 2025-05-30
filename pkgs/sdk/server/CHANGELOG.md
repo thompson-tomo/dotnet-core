@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.9.0](https://github.com/launchdarkly/dotnet-core/compare/LaunchDarkly.ServerSdk-v8.8.0...LaunchDarkly.ServerSdk-v8.9.0) (2025-05-30)
+
+
+### Features
+
+* Update to net8 ([ddae814](https://github.com/launchdarkly/dotnet-core/commit/ddae814250cb21e0de2b953808202addd7098c4c))
+
 ## [8.8.0](https://github.com/launchdarkly/dotnet-core/compare/LaunchDarkly.ServerSdk-v8.7.0...LaunchDarkly.ServerSdk-v8.8.0) (2025-05-05)
 
 
