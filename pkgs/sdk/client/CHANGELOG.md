@@ -3,6 +3,14 @@
 All notable changes to the LaunchDarkly Client-Side SDK for .NET will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## [5.5.0](https://github.com/launchdarkly/dotnet-core/compare/LaunchDarkly.ClientSdk-v5.4.0...LaunchDarkly.ClientSdk-v5.5.0) (2025-05-30)
+
+
+### Features
+
+* Update SDK client to net8 ([aea1514](https://github.com/launchdarkly/dotnet-core/commit/aea1514b104007d703aafa58adc2ff318f8182b1))
+* Update to net8 ([ddae814](https://github.com/launchdarkly/dotnet-core/commit/ddae814250cb21e0de2b953808202addd7098c4c))
+
 ## [5.4.0](https://github.com/launchdarkly/dotnet-core/compare/LaunchDarkly.ClientSdk-v5.3.0...LaunchDarkly.ClientSdk-v5.4.0) (2025-05-07)
 
 
