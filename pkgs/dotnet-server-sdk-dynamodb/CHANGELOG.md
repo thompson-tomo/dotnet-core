@@ -2,6 +2,24 @@
 
 All notable changes to the LaunchDarkly .NET SDK DynamoDB integration will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [6.0.0](https://github.com/thompson-tomo/dotnet-core/compare/LaunchDarkly.ServerSdk.DynamoDB-v5.0.1...LaunchDarkly.ServerSdk.DynamoDB-v6.0.0) (2026-08-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* Support AWSSDK.DynamoDB v4 ([#173](https://github.com/thompson-tomo/dotnet-core/issues/173))
+
+### Features
+
+* Support AWSSDK.DynamoDB v4 ([#173](https://github.com/thompson-tomo/dotnet-core/issues/173)) ([05c16c1](https://github.com/thompson-tomo/dotnet-core/commit/05c16c16865f6978df2cd6eb9b057bdbbacb4aad))
+
+
+### Bug Fixes
+
+* exclude documentation files from NuGet package builds ([#263](https://github.com/thompson-tomo/dotnet-core/issues/263)) ([cc86ad6](https://github.com/thompson-tomo/dotnet-core/commit/cc86ad6bd54d2201db5171971946368cde8f45f8))
+* Fix package deployment process ([#174](https://github.com/thompson-tomo/dotnet-core/issues/174)) ([3b2ce8b](https://github.com/thompson-tomo/dotnet-core/commit/3b2ce8b88610f12b94d79c815eeba6a49f9cbeed))
+* Prevent using incompatible AWS version ([#171](https://github.com/thompson-tomo/dotnet-core/issues/171)) ([5496a64](https://github.com/thompson-tomo/dotnet-core/commit/5496a64bedc2bc25fdf8ca9757345de25b67f38f))
+
 ## [5.0.1](https://github.com/launchdarkly/dotnet-core/compare/LaunchDarkly.ServerSdk.DynamoDB-v5.0.0...LaunchDarkly.ServerSdk.DynamoDB-v5.0.1) (2026-05-27)
 
 
