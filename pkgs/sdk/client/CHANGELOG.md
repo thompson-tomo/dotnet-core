@@ -3,6 +3,42 @@
 All notable changes to the LaunchDarkly Client-Side SDK for .NET will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## [5.11.0](https://github.com/thompson-tomo/dotnet-core/compare/LaunchDarkly.ClientSdk-v5.10.0...LaunchDarkly.ClientSdk-v5.11.0) (2026-09-03)
+
+
+### Features
+
+* Add Identify hooks to Client SDK ([#234](https://github.com/thompson-tomo/dotnet-core/issues/234)) ([ddbb81f](https://github.com/thompson-tomo/dotnet-core/commit/ddbb81fd3be7bf7b6c49962c5fa4b2a93b9cf44c))
+* Add plugin support to Client SDK ([#229](https://github.com/thompson-tomo/dotnet-core/issues/229)) ([ce5cdd9](https://github.com/thompson-tomo/dotnet-core/commit/ce5cdd989ef3850e80a61125b4cc3c36ae23b1a9))
+* Allow register plugins dynamically  ([#266](https://github.com/thompson-tomo/dotnet-core/issues/266)) ([547e518](https://github.com/thompson-tomo/dotnet-core/commit/547e51852b10531952ae94f503d31deeb932d797))
+* bump LaunchDarkly.InternalSdk pins to 3.10.1 ([fa7bcf9](https://github.com/thompson-tomo/dotnet-core/commit/fa7bcf9dd0b239ade71fba2d40882e01f5f53dcb))
+* client-side prerequisite events ([#24](https://github.com/thompson-tomo/dotnet-core/issues/24)) ([f5828cb](https://github.com/thompson-tomo/dotnet-core/commit/f5828cb2999cda2ebe5a36c739f54f2b326f4a68))
+* enable per-context summary events ([#288](https://github.com/thompson-tomo/dotnet-core/issues/288)) ([b3caf8d](https://github.com/thompson-tomo/dotnet-core/commit/b3caf8dfd577e8578c06669d93714886701d9a9c))
+* Inline context for custom and migration op events in Client SDK ([#96](https://github.com/thompson-tomo/dotnet-core/issues/96)) ([6774539](https://github.com/thompson-tomo/dotnet-core/commit/6774539af1a2f87b96ae3e647fdcdc5663c791ab))
+* Update SDK client to net8 ([aea1514](https://github.com/thompson-tomo/dotnet-core/commit/aea1514b104007d703aafa58adc2ff318f8182b1))
+* Update to net8 ([ddae814](https://github.com/thompson-tomo/dotnet-core/commit/ddae814250cb21e0de2b953808202addd7098c4c))
+
+
+### Bug Fixes
+
+* [#104](https://github.com/thompson-tomo/dotnet-core/issues/104) dependency optimisation ([#111](https://github.com/thompson-tomo/dotnet-core/issues/111)) ([2c7ff62](https://github.com/thompson-tomo/dotnet-core/commit/2c7ff629a4c16ad866c6e4ea5b24abc622942f0e))
+* add defensive cycle guard to prerequisite evaluation ([#317](https://github.com/thompson-tomo/dotnet-core/issues/317)) ([babb87a](https://github.com/thompson-tomo/dotnet-core/commit/babb87af55eea862c02421b2a14647007f504ddb))
+* Bump Internal SDK to 3.5.2 ([#135](https://github.com/thompson-tomo/dotnet-core/issues/135)) ([75db503](https://github.com/thompson-tomo/dotnet-core/commit/75db503c537f6d06db60747f6357825827efaefe))
+* Bump Internal SDK to 3.5.4 and Common SDK to 7.1.0 ([#154](https://github.com/thompson-tomo/dotnet-core/issues/154)) ([2746c1a](https://github.com/thompson-tomo/dotnet-core/commit/2746c1aa06628cb8af7ff03a65c2b7542195aeff))
+* Bump Internal SDK version ([#112](https://github.com/thompson-tomo/dotnet-core/issues/112)) ([3cb5ae4](https://github.com/thompson-tomo/dotnet-core/commit/3cb5ae4e1de89f55d9221997c3ba2c7179ae4a2d))
+* Correct nuget license format. ([#332](https://github.com/thompson-tomo/dotnet-core/issues/332)) ([cc1ff83](https://github.com/thompson-tomo/dotnet-core/commit/cc1ff83705794fe36d1d14ea5e10d232ce23997d))
+* exclude documentation files from NuGet package builds ([#263](https://github.com/thompson-tomo/dotnet-core/issues/263)) ([cc86ad6](https://github.com/thompson-tomo/dotnet-core/commit/cc86ad6bd54d2201db5171971946368cde8f45f8))
+* gracefully handle MAUI unavailability in non-MAUI Windows apps ([#264](https://github.com/thompson-tomo/dotnet-core/issues/264)) ([f51a123](https://github.com/thompson-tomo/dotnet-core/commit/f51a123e9437348e517d8c5e34a8cce3106d7d78))
+* honor BackgroundPollInterval when app is in background ([#334](https://github.com/thompson-tomo/dotnet-core/issues/334)) ([22e139b](https://github.com/thompson-tomo/dotnet-core/commit/22e139bdfd4c2cabc0497888211f51e74f8e5470))
+* treat unknown/constrained network access as connected ([#323](https://github.com/thompson-tomo/dotnet-core/issues/323)) ([a633c9a](https://github.com/thompson-tomo/dotnet-core/commit/a633c9a261105edc557ded09ff9a8f3053adf0a6))
+* Update CommonSdk to 7.2.0 and InternalSdk to 3.6.1 ([#243](https://github.com/thompson-tomo/dotnet-core/issues/243)) ([9e8e5ff](https://github.com/thompson-tomo/dotnet-core/commit/9e8e5ff1734548462a681ab66147acc2bd2f2895))
+* Update CommonSDK to v7.0.1 ([#126](https://github.com/thompson-tomo/dotnet-core/issues/126)) ([fad338e](https://github.com/thompson-tomo/dotnet-core/commit/fad338e651ffe856d6cf5c6e71ba6ff1526d422a))
+* Update EventSource to 5.2.1 ([#159](https://github.com/thompson-tomo/dotnet-core/issues/159)) ([35d08d7](https://github.com/thompson-tomo/dotnet-core/commit/35d08d7160512850c6d3a81e4fc312696cbb808e))
+* update LaunchDarkly.EventSource to 5.3.1 for Authenticode-signed assemblies ([#303](https://github.com/thompson-tomo/dotnet-core/issues/303)) ([60e5c4e](https://github.com/thompson-tomo/dotnet-core/commit/60e5c4ec3de82c29df4b64874a89956bb3d0f1c5))
+* update LaunchDarkly.EventSource to 5.3.2 for MAUI Android SSE stall (SDK-2755) ([#328](https://github.com/thompson-tomo/dotnet-core/issues/328)) ([9f7cb38](https://github.com/thompson-tomo/dotnet-core/commit/9f7cb3883d4d6520f88c35b4d3a26e3b16572bb9))
+* use monotonic clock for intervals and durations, UTC for diagnostic timestamps ([#339](https://github.com/thompson-tomo/dotnet-core/issues/339)) ([e12ee4a](https://github.com/thompson-tomo/dotnet-core/commit/e12ee4abec76faabc7614cc0df58b050e56030db))
+* Validate string format of SDK key ([#162](https://github.com/thompson-tomo/dotnet-core/issues/162)) ([27a26fb](https://github.com/thompson-tomo/dotnet-core/commit/27a26fb9e226f7e5208928d9df43fbd6d5a68037))
+
 ## [5.10.0](https://github.com/launchdarkly/dotnet-core/compare/LaunchDarkly.ClientSdk-v5.9.6...LaunchDarkly.ClientSdk-v5.10.0) (2026-09-02)
 
 
