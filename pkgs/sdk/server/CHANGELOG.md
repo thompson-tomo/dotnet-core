@@ -1,5 +1,48 @@
 # Changelog
 
+## [8.17.0](https://github.com/thompson-tomo/dotnet-core/compare/LaunchDarkly.ServerSdk-v8.16.2...LaunchDarkly.ServerSdk-v8.17.0) (2026-09-03)
+
+
+### Features
+
+* Add environment ID support for hooks. ([#81](https://github.com/thompson-tomo/dotnet-core/issues/81)) ([49149f2](https://github.com/thompson-tomo/dotnet-core/commit/49149f2509a4a94e77f36414708d73e368b0acc5))
+* Add experimental plugin support ([#139](https://github.com/thompson-tomo/dotnet-core/issues/139)) ([b34431e](https://github.com/thompson-tomo/dotnet-core/commit/b34431e171f97031ace2d03d5a9347e14fa01df7))
+* add X-LaunchDarkly-Instance-Id header ([#258](https://github.com/thompson-tomo/dotnet-core/issues/258)) ([3c03ec4](https://github.com/thompson-tomo/dotnet-core/commit/3c03ec4e3e73013cf5116af0583243605c561576))
+* bump LaunchDarkly.InternalSdk pins to 3.10.1 ([fa7bcf9](https://github.com/thompson-tomo/dotnet-core/commit/fa7bcf9dd0b239ade71fba2d40882e01f5f53dcb))
+* Drop persistent-store cache after FDv2 in-memory store init ([#274](https://github.com/thompson-tomo/dotnet-core/issues/274)) ([76c3c23](https://github.com/thompson-tomo/dotnet-core/commit/76c3c23b3eb3706fa504c49e5a9cbbd6b19d99c9))
+* **experimental:** Release EAP support for FDv2 data system. ([d78799a](https://github.com/thompson-tomo/dotnet-core/commit/d78799acb38323c8ca7207046b41570e1d333a28))
+* Inline context for custom and migrations op events ([#94](https://github.com/thompson-tomo/dotnet-core/issues/94)) ([6e4fcc7](https://github.com/thompson-tomo/dotnet-core/commit/6e4fcc7cde62c30130da65c34e144dcc925a5e8e))
+* Make Status ToString() methods format consistent  ([#247](https://github.com/thompson-tomo/dotnet-core/issues/247)) ([6373f98](https://github.com/thompson-tomo/dotnet-core/commit/6373f987f27f479aa256e94ab472037623e1febc))
+* report prerequisite relations in AllFlagState ([#19](https://github.com/thompson-tomo/dotnet-core/issues/19)) ([43da95c](https://github.com/thompson-tomo/dotnet-core/commit/43da95c85eb0766794c5f0dfb52d1d836b6deb17))
+* Support redacting anonymous context attributes in all events ([034e43b](https://github.com/thompson-tomo/dotnet-core/commit/034e43b127fc98b24c066b24c0cb25a43c49a774))
+* Support server-side gzip for polling ([#319](https://github.com/thompson-tomo/dotnet-core/issues/319)) ([058d977](https://github.com/thompson-tomo/dotnet-core/commit/058d977ea17789108c82dd493313afd353676770))
+* Update to net8 ([ddae814](https://github.com/thompson-tomo/dotnet-core/commit/ddae814250cb21e0de2b953808202addd7098c4c))
+
+
+### Bug Fixes
+
+* [#104](https://github.com/thompson-tomo/dotnet-core/issues/104) dependency optimisation ([#111](https://github.com/thompson-tomo/dotnet-core/issues/111)) ([2c7ff62](https://github.com/thompson-tomo/dotnet-core/commit/2c7ff629a4c16ad866c6e4ea5b24abc622942f0e))
+* Bump Internal SDK to 3.5.4 and Common SDK to 7.1.0 ([#154](https://github.com/thompson-tomo/dotnet-core/issues/154)) ([2746c1a](https://github.com/thompson-tomo/dotnet-core/commit/2746c1aa06628cb8af7ff03a65c2b7542195aeff))
+* Bump Internal SDK version ([#112](https://github.com/thompson-tomo/dotnet-core/issues/112)) ([3cb5ae4](https://github.com/thompson-tomo/dotnet-core/commit/3cb5ae4e1de89f55d9221997c3ba2c7179ae4a2d))
+* enable anonymous-context redaction for server events (SDK-2735) ([#314](https://github.com/thompson-tomo/dotnet-core/issues/314)) ([0113050](https://github.com/thompson-tomo/dotnet-core/commit/01130502f6ca5a03c09a5556b08fc64967e2f3a6))
+* exclude documentation files from NuGet package builds ([#263](https://github.com/thompson-tomo/dotnet-core/issues/263)) ([cc86ad6](https://github.com/thompson-tomo/dotnet-core/commit/cc86ad6bd54d2201db5171971946368cde8f45f8))
+* Honor x-ld-fd-fallback header in FDv2 initializer phase and on successful responses ([#251](https://github.com/thompson-tomo/dotnet-core/issues/251)) ([4bb667d](https://github.com/thompson-tomo/dotnet-core/commit/4bb667dc6ca7560a45c6b43cb2b02e2744a0f466))
+* IfMatchContext/AndMatchContext utilize context kind. ([#225](https://github.com/thompson-tomo/dotnet-core/issues/225)) ([95bc949](https://github.com/thompson-tomo/dotnet-core/commit/95bc9495984976833efd736f36fc4023c37eb663))
+* improved accuracy of stream interruption error message. ([#12](https://github.com/thompson-tomo/dotnet-core/issues/12)) ([bd6b413](https://github.com/thompson-tomo/dotnet-core/commit/bd6b413961238d87d71b4d7539abb2c2ed5bb863))
+* Invalid circular reference detection for nested segments ([#137](https://github.com/thompson-tomo/dotnet-core/issues/137)) ([98f418e](https://github.com/thompson-tomo/dotnet-core/commit/98f418e14f3c40057cf63276d1bbd2ea83d6e592))
+* polling 304 responses handled appropriately ([#345](https://github.com/thompson-tomo/dotnet-core/issues/345)) ([74ad49c](https://github.com/thompson-tomo/dotnet-core/commit/74ad49cb291dc0265c8ead010bc8e4c899e1e24f))
+* Retry after partial file reads. ([#218](https://github.com/thompson-tomo/dotnet-core/issues/218)) ([93f4508](https://github.com/thompson-tomo/dotnet-core/commit/93f4508f5d75f4276990798cd686dfd09dcf5c0a))
+* Track latencies greater than 1 second ([#133](https://github.com/thompson-tomo/dotnet-core/issues/133)) ([4416c86](https://github.com/thompson-tomo/dotnet-core/commit/4416c86fdf6deab170538fda4dd9474860c85892))
+* Update CommonSdk to 7.2.0 and InternalSdk to 3.6.1 ([#243](https://github.com/thompson-tomo/dotnet-core/issues/243)) ([9e8e5ff](https://github.com/thompson-tomo/dotnet-core/commit/9e8e5ff1734548462a681ab66147acc2bd2f2895))
+* Update CommonSDK to v7.0.1 ([#126](https://github.com/thompson-tomo/dotnet-core/issues/126)) ([fad338e](https://github.com/thompson-tomo/dotnet-core/commit/fad338e651ffe856d6cf5c6e71ba6ff1526d422a))
+* Update EventSource to 5.2.1 ([#159](https://github.com/thompson-tomo/dotnet-core/issues/159)) ([35d08d7](https://github.com/thompson-tomo/dotnet-core/commit/35d08d7160512850c6d3a81e4fc312696cbb808e))
+* Update FileDataSource to process reload triggers under lock. ([#199](https://github.com/thompson-tomo/dotnet-core/issues/199)) ([75f51c6](https://github.com/thompson-tomo/dotnet-core/commit/75f51c67bff8ccf36035a948763998c10f083dbd))
+* update LaunchDarkly.EventSource to 5.3.1 for Authenticode-signed assemblies ([#303](https://github.com/thompson-tomo/dotnet-core/issues/303)) ([60e5c4e](https://github.com/thompson-tomo/dotnet-core/commit/60e5c4ec3de82c29df4b64874a89956bb3d0f1c5))
+* use basis query param for FDv2 polling selector ([#260](https://github.com/thompson-tomo/dotnet-core/issues/260)) ([abaee9d](https://github.com/thompson-tomo/dotnet-core/commit/abaee9dfc16634f4d5a952b68db06cd34e801e39))
+* use monotonic clock for intervals and durations, UTC for diagnostic timestamps ([#339](https://github.com/thompson-tomo/dotnet-core/issues/339)) ([e12ee4a](https://github.com/thompson-tomo/dotnet-core/commit/e12ee4abec76faabc7614cc0df58b050e56030db))
+* Use thread-safe hash for big segments hashing. ([#180](https://github.com/thompson-tomo/dotnet-core/issues/180)) ([06196d8](https://github.com/thompson-tomo/dotnet-core/commit/06196d881d306e2bd09631469c657a4f11685fcc))
+* Validate string format of SDK key ([#162](https://github.com/thompson-tomo/dotnet-core/issues/162)) ([27a26fb](https://github.com/thompson-tomo/dotnet-core/commit/27a26fb9e226f7e5208928d9df43fbd6d5a68037))
+
 ## [8.16.2](https://github.com/launchdarkly/dotnet-core/compare/LaunchDarkly.ServerSdk-v8.16.1...LaunchDarkly.ServerSdk-v8.16.2) (2026-09-03)
 
 
