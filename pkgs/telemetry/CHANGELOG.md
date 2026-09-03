@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.6.0](https://github.com/thompson-tomo/dotnet-core/compare/LaunchDarkly.ServerSdk.Telemetry-v1.5.1...LaunchDarkly.ServerSdk.Telemetry-v1.6.0) (2026-09-03)
+
+
+### Features
+
+* add all available attributes to a span ([#167](https://github.com/thompson-tomo/dotnet-core/issues/167)) ([7350aac](https://github.com/thompson-tomo/dotnet-core/commit/7350aac8ef35630b0273d3b12d34e77fa682ff9c))
+* Add environment id support for the OTEL hook. ([#82](https://github.com/thompson-tomo/dotnet-core/issues/82)) ([c2ed519](https://github.com/thompson-tomo/dotnet-core/commit/c2ed519e64dacccad3e74445e4f3b132dd3f4edb))
+* Support 9x of System.Diagnostics.DiagnosticSource. ([#149](https://github.com/thompson-tomo/dotnet-core/issues/149)) ([d935df6](https://github.com/thompson-tomo/dotnet-core/commit/d935df601f2b9bfe2d65fcd0a4e78dec1f7fe2f7))
+* Support System.Diagnostics.DiagnosticSource version 10.* ([#254](https://github.com/thompson-tomo/dotnet-core/issues/254)) ([034538e](https://github.com/thompson-tomo/dotnet-core/commit/034538e737ca7ac06fc5fc23a32d98d83b6df4e5))
+* Update to net8 ([ddae814](https://github.com/thompson-tomo/dotnet-core/commit/ddae814250cb21e0de2b953808202addd7098c4c))
+* Updating semantic conventions ([#148](https://github.com/thompson-tomo/dotnet-core/issues/148)) ([a73d332](https://github.com/thompson-tomo/dotnet-core/commit/a73d3320a16d628f44b38d2a09230835d808a41d))
+
+
+### Bug Fixes
+
+* exclude documentation files from NuGet package builds ([#263](https://github.com/thompson-tomo/dotnet-core/issues/263)) ([cc86ad6](https://github.com/thompson-tomo/dotnet-core/commit/cc86ad6bd54d2201db5171971946368cde8f45f8))
+
 ## [1.5.1](https://github.com/launchdarkly/dotnet-core/compare/LaunchDarkly.ServerSdk.Telemetry-v1.5.0...LaunchDarkly.ServerSdk.Telemetry-v1.5.1) (2026-05-27)
 
 
