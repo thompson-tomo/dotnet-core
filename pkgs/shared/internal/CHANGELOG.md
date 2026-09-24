@@ -2,6 +2,20 @@
 
 All notable changes to `LaunchDarkly.InternalSdk` will be documented in this file. For full release notes for the projects that depend on this project, see their respective changelogs. This file describes changes only to the common code. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [3.12.0](https://github.com/thompson-tomo/dotnet-core/compare/LaunchDarkly.InternalSdk-v3.11.0...LaunchDarkly.InternalSdk-v3.12.0) (2026-09-24)
+
+
+### Features
+
+* add failure classification and one-shot task scheduling to InternalSdk ([#350](https://github.com/thompson-tomo/dotnet-core/issues/350)) ([1f7a4af](https://github.com/thompson-tomo/dotnet-core/commit/1f7a4af115408191b73c9eb9a9513f0cb1c0de8a))
+* enable gzip AutomaticDecompression on the default HTTP handler ([#318](https://github.com/thompson-tomo/dotnet-core/issues/318)) ([b346071](https://github.com/thompson-tomo/dotnet-core/commit/b346071a896672a8eaa2206b5dfbbd54473fe93c))
+* Support redacting anonymous context attributes in all events ([034e43b](https://github.com/thompson-tomo/dotnet-core/commit/034e43b127fc98b24c066b24c0cb25a43c49a774))
+
+
+### Bug Fixes
+
+* use monotonic clock for intervals and durations, UTC for diagnostic timestamps ([#339](https://github.com/thompson-tomo/dotnet-core/issues/339)) ([e12ee4a](https://github.com/thompson-tomo/dotnet-core/commit/e12ee4abec76faabc7614cc0df58b050e56030db))
+
 ## [3.11.0](https://github.com/launchdarkly/dotnet-core/compare/LaunchDarkly.InternalSdk-v3.10.1...LaunchDarkly.InternalSdk-v3.11.0) (2026-09-16)
 
 
